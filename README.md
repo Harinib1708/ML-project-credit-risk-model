@@ -75,34 +75,35 @@ The system converts the raw Probability of Default ($PD$) into a standardized cr
 ## 🧩 Project Structure
 
 ```text
-ml-project-credit-risk-modelling/
+ML-project-credit-risk-model/
 │
-├── artifacts/
-│   └── model_data.joblib         # Serialized inference models & preprocessing pipelines
+├── app/                          # Production application code (UI & API services)
 │
-├── backend/
-│   ├── logging_setup.py          # Structured logging configuration for production monitoring
-│   ├── prediction.py             # Inference execution logic and data transformation
-│   └── server_cr.py              # FastAPI application server and endpoint routing
+├── artifacts/                    # Serialized models, encoders, and weights
 │
-├── main.py                       # Streamlit frontend UI application entrypoint
+├── Datasets/                     # Source data used for model training and evaluation
+│   ├── bureau_data.csv
+│   ├── customers.csv
+│   └── loans.csv
+│
+├── credit_risk_model.ipynb       # Jupyter Notebook for EDA, training, and evaluation
 ├── requirements.txt              # Application dependencies and pinned versions
 └── README.md                     # System documentation
 ```
-## 🛠️ Installation & Local Setup
-
+🛠️ Installation & Local Setup
 Follow these step-by-step instructions to clone the repository and run the application in your local development environment:
 
-### Prerequisites
-* Python `3.10` or higher installed on your system.
-* `pip` (Python package installer).
+Prerequisites
+Python 3.10 or higher installed on your system.
 
-### Execution Steps
+pip (Python package installer).
 
-1. **Clone the repository and navigate to the project directory:**
-   ```bash
-   git clone [https://github.com/NISHU8875/Credit_Risk_Predictor.git](https://github.com/NISHU8875/Credit_Risk_Predictor.git)
-   cd ml-project-credit-risk-modelling
+Execution Steps
+Clone the repository and navigate to the project directory:
+
+Bash
+git clone [https://github.com/Harinib1708/ML-project-credit-risk-model.git](https://github.com/Harinib1708/ML-project-credit-risk-model.git)
+cd ML-project-credit-risk-model
 Install the required dependencies:
 
 Bash
@@ -110,8 +111,7 @@ pip install -r requirements.txt
 Launch the local Streamlit application:
 
 Bash
-streamlit run main.py
-
+streamlit run app/main.py
 
 ## 📈 Business Impact & Value Delivered
 
