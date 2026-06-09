@@ -90,28 +90,22 @@ ML-project-credit-risk-model/
 ├── requirements.txt              # Application dependencies and pinned versions
 └── README.md                     # System documentation
 ```
-🛠️ Installation & Local Setup
-Follow these step-by-step instructions to clone the repository and run the application in your local development environment:
 
-Prerequisites
-Python 3.10 or higher installed on your system.
+### Execution Steps
 
-pip (Python package installer).
+Run the following commands in your terminal to set up and start the application:
 
-Execution Steps
-Clone the repository and navigate to the project directory:
-
-Bash
+```bash
+# Clone the repository and navigate into the project folder
 git clone [https://github.com/Harinib1708/ML-project-credit-risk-model.git](https://github.com/Harinib1708/ML-project-credit-risk-model.git)
 cd ML-project-credit-risk-model
-Install the required dependencies:
 
-Bash
+# Install all required project dependencies
 pip install -r requirements.txt
-Launch the local Streamlit application:
 
-Bash
+# Launch the Streamlit application
 streamlit run app/main.py
+```
 
 ## 📈 Business Impact & Value Delivered
 
