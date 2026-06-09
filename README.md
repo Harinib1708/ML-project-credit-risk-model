@@ -1,4 +1,4 @@
-# End-to-End Production-Ready Credit Risk Evaluation System
+# Credit Risk Evaluation System
 
 An end-to-end, high-throughput machine learning system designed to automate credit risk assessment for financial institutions. The system predicts the **Probability of Default (PD)**, maps risk metrics to a standardized credit score ($300 - 900$), and categorizes applicants into actionable risk tiers in real time. 
 
